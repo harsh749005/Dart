@@ -35,6 +35,43 @@ void checkNumber(double num){
 }
 
 
+// Check eligible
+void vote(int age){
+  if(age >=18){
+    print("You are eligible to vote.");
+  }
+  else{
+    print("You are not eligible to vote.");
+  }
+}
+
+// Calculator
+void calculator(int a,int b,String operation){
+  switch(operation){
+    case '+':{
+      print("Addition of $a + $b = ${a+b}");
+      break;
+    }
+      case '-':{
+      print("Subtraction of $a - $b = ${a-b}");
+      break;
+    }
+      case '*':{
+      print("Multiplication of $a * $b = ${a*b}");
+      break;
+    }
+      case '/':{
+      print("Division of $a / $b = ${a/b}");
+      break;
+    }
+      case '%':{
+      print("Modulus of $a % $b = ${a%b}");
+      break;
+    }
+  }
+}
+
+
 void main() {
   areaOfRectangle(12.45, 14);
 
@@ -43,4 +80,6 @@ void main() {
   checkGrade('C');
   checkNumber(12);
   checkDay(3);
+  vote(18);
+  calculator(12,32,'*');
 }
